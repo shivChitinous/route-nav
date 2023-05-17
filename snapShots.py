@@ -19,7 +19,7 @@ def snapLocs(dWorld, zAnt, n):
     return snapLocs
 
 def scanLocs(learntID, learntLocs, learntHDs, zAnt,
-             r, boundary, thetaRes, thetaLim):
+             r, boundary, thetaRes, thetaLim, HD):
 
     sceneLocs = learntLocs[learntID:learntID+2] #from 1 learnt frame to the next
     sceneHDs = learntHDs[learntID:learntID+2] #from 1 learnt frame to the next
@@ -30,8 +30,8 @@ def scanLocs(learntID, learntLocs, learntHDs, zAnt,
     
     grid = np.vstack([X.ravel(), Y.ravel()]).T
     
-    scan = np.arange(sceneHDs.min()
-                     -thetaLim*np.pi/180,sceneHDs.max()+
+    scan = np.arange(HD
+                     -thetaLim*np.pi/180,HD+
                      thetaLim*np.pi/180,thetaRes*np.pi/180)
     
     routex = np.stack([np.meshgrid(grid[:,0],zAnt,scan)]).T.reshape(-1,3)
