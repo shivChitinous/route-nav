@@ -132,3 +132,4 @@ dmypy.json
 #plot folder
 plots/
 data/
+.DS_Store
