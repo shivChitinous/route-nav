@@ -2,7 +2,7 @@
 ## Network Model of Route Navigation in _Cataglyphis_
 
 We generate routes and scenes using the Seville dataset [1] and train a Willshaw-like association network 
-based on [2] for detecting the novelty of a scene. The output of the network can be used to head along a
+based on [2] for detecting the novelty of a scene. The output of the network can be used to move along a
 learnt route. 
 
 [1] https://insectvision.dlr.de/walking-insects/antnavigationchallenge
