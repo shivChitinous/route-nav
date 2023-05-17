@@ -130,7 +130,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#plot folder
-plots/
-data/
+#cache folder
 __pycache__/
