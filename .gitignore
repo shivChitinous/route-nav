@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.DS_Store
-ipynb_checkpoints/
+.ipynb_checkpoints/
 
 # C extensions
 *.so
@@ -133,4 +133,4 @@ dmypy.json
 #plot folder
 plots/
 data/
-.DS_Store
+__pycache__/
